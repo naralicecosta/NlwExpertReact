@@ -1,4 +1,5 @@
 import logo from './assets/logo-nlw-expert.svg'
+import { NewNoteCard } from './components/new-note-card'
 import { NoteCard } from './components/note-card'
 
 export function App(){
@@ -16,12 +17,16 @@ export function App(){
       <div className='h-px bg-slate-700'></div>
 
       <div className='grid grid-cols-3 auto-rows-[250px]W'>
-        <div className='rounded-md bg-slate-700 p-5 space-y-3W'>
-          <span className='text-sm font-medium text-slate-200'>Adicionar nota</span>
-          <p className='text-sm leading-6 text-slate-400'>Grave um audio...</p>
-        </div>
+        <NewNoteCard />
+       
 
         <NoteCard />
+        <NoteCard />
+        <NoteCard />
+        <NoteCard />
+        <NoteCard />
+
+
 
       </div>
     </div>
